@@ -16,7 +16,8 @@ import {
   FoodLabel1, 
   FoodLabel4, 
   FoodLabel3, 
-  FoodLabel2
+  FoodLabel2,
+  Personal
 } from "../assets";
 
 const navLinks = [
@@ -123,27 +124,22 @@ const experience = [
     company: "CosyLab",
     time: "Sept 2024 - Dec 2024",
     images: [FoodLabel1, FoodLabel4, FoodLabel3, FoodLabel2],
-    points: ["1. Developed a full-stack food search platform using React, Vite, Node.js, and ElasticSearch, enabling multi-criteria searches (e.g., NOVA class, nutrients, category).","2. Implemented Logstash ELT pipeline to transfer 8L+ dataset entries to ElasticSearch.","3. Deployed ElasticSearch and backend server using Docker for scalability.articipating in code reviews and providing constructive feedback to other developers.","4. Designed microservices for ML model integration and ElasticSearch interactions."],
+    points: ["1. Developed a full-stack food search platform using React, Vite, Node.js, and ElasticSearch, enabling multi-criteria searches (e.g., NOVA class, nutrients, category).","2. Implemented Logstash ELT pipeline to transfer 8L+ dataset entries to ElasticSearch.","3. Deployed ElasticSearch and backend server using Docker for scalability.","4. Designed microservices for ML model integration and ElasticSearch interactions."],
   },
 ];
 
 const featuredProjects = [
   {
     id: 0,
-    title: "Full Stack Developer",
-    points : "A web based platform which leverages facial recognition technology to streamline visitor management for academic institutions."+ " Meeting schedules are seamlessly integrated with Google Calendar for both professors and students. This ensures efficient appointment handling and enhances campus security by verifying identities at entry points",
-    tech: ["React", "Node.js", "Express.js", "MySQL", "JWT", "Socket.io", "AWS"],
-    gitlink: "https://github.com/mahanshAdtiya/VisitorManagement",
-    // livelink: "https://github.com/mahanshAdtiya/VisitorManagement",
-    image: vm
+    title: "Stock Rev",
+    points : "A a stock monitoring platform that allows users to create and manage watchlists and display the latest stock prices. It is built using React, TypeScript, Material UI for the frontend, and Django for the backend. The platform integrates with Alpha Vantage to fetch stock data.",
+    tech: ["React.js","Django","SQLite", "Typescript"],
+    gitlink: "https://github.com/mahanshAdtiya/stock-monitor",
+    image: alShita
   },
   {
     id: 1,
     title: "AgriConnect",
-    stats : [
-      {main : 'Over 1M', sub: "Increase in user base, demonstrating significant growth and effectiveness"},
-      {main : '35%', sub: "IIncrease in daily active users shows enhanced engagement"},
-    ],
     points : "A full-stack web applicationa platform which provides farmers with real-time market information, weather forecasts and innovative farming techniques, enabling them to enhance crop yields, and adapt to climate variation effectively. For better user experience, user can view the website in both Hindi and English languages.",
     tech: ["React.js", "Tailwind CSS"],
     gitlink: "https://github.com/mahanshAdtiya/AgriConnect",
@@ -161,13 +157,19 @@ const featuredProjects = [
   },
   {
     id: 3,
-    title: "Stock Rev",
-    points : "A a stock monitoring platform that allows users to create and manage watchlists and display the latest stock prices. It is built using React, TypeScript, Material UI for the frontend, and Django for the backend. The platform integrates with Alpha Vantage to fetch stock data.",
-    tech: ["React.js","Django","SQLite", "Typescript"],
-    gitlink: "https://github.com/mahanshAdtiya/stock-monitor",
-    // livelink: "https://github.com/mahanshAdtiya/stock-monitor",
-    image: alShita
-  }
+    title: "Visitor Management System",
+    points : "A web based platform which leverages facial recognition technology to streamline visitor management for academic institutions."+ " Meeting schedules are seamlessly integrated with Google Calendar for both professors and students. This ensures efficient appointment handling and enhances campus security by verifying identities at entry points",
+    tech: ["React", "Node.js", "Express.js", "MySQL", "JWT", "Socket.io", "AWS"],
+    livelink: "https://github.com/mahanshAdtiya/VisitorManagement",
+    image: vm
+  },
+  {
+    id: 4,
+    title: "GameLog",
+    points : "Built a multiplayer game analytics service to track popular game modes by user activity in specific area codes. Simulated real-world user behavior using Go's concurrency model with goroutines across 10 game modes. Implemented JWT-based authentication for secure access. Integrated Redis caching, reducing MongoDB load and improving response times by 40% under high traffic. Utilized MongoDB for scalable storage of game mode data and user information.",
+    tech: ["GoLang", "MongoDB", "Redis", "JWT", "Protobuf", "React"],
+    image: Personal
+  },
 ]
 
 const projects = [

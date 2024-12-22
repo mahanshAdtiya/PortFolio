@@ -17,6 +17,7 @@ import Login from '/images/Login.png'
 import DashBoard1 from '/images/DashBoard1.png'
 import DashBoard2 from '/images/DashBoard2.png'
 import DashBoard3 from '/images/DashBoard3.png'
+import Personal from '/images/Personal.png'
 
 import b1 from '/svg/b1.svg';
 import b4 from '/svg/b4.svg';
@@ -34,6 +35,7 @@ export {
   FoodLabel2,
   FoodLabel3,
   FoodLabel4,
+  Personal,
   vm,
   alShita,
   vocalVerify,
